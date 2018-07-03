@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "60B919CEBE8A5C030526EA40C3BC0161"
+               BlueprintIdentifier = "141013A83CF08025E3A9A3B50F69ADBA"
                BuildableName = "Pods_firebase_realtime_database.framework"
                BlueprintName = "Pods-firebase realtime database"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "60B919CEBE8A5C030526EA40C3BC0161"
+            BlueprintIdentifier = "141013A83CF08025E3A9A3B50F69ADBA"
             BuildableName = "Pods_firebase_realtime_database.framework"
             BlueprintName = "Pods-firebase realtime database"
             ReferencedContainer = "container:Pods.xcodeproj">

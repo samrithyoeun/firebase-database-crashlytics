@@ -14,7 +14,13 @@
 		5332389F20E9D1850090E2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5332389D20E9D1850090E2AE /* LaunchScreen.storyboard */; };
 		533238A720E9E1A80090E2AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 533238A620E9E1A20090E2AE /* GoogleService-Info.plist */; };
 		533238A920E9FD610090E2AE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533238A820E9FD610090E2AE /* Item.swift */; };
-		533238AE20EA1B350090E2AE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533238AD20EA1B350090E2AE /* Data.swift */; };
+		5333E61B20EB2275000B3E9F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5333E61A20EB2275000B3E9F /* Default-568h@2x.png */; };
+		5333E62220EB2B5C000B3E9F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5333E62020EB2B5C000B3E9F /* Model.xcdatamodeld */; };
+		5333E64520EB2E11000B3E9F /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E64420EB2E11000B3E9F /* CoreDataService.swift */; };
+		5333E64720EB513E000B3E9F /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E64620EB513E000B3E9F /* FirebaseService.swift */; };
+		5333E64920EB5DEC000B3E9F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E64820EB5DEC000B3E9F /* Helper.swift */; };
+		5333E64D20EB625A000B3E9F /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E64C20EB625A000B3E9F /* RealmService.swift */; };
+		5333E64F20EB7AFD000B3E9F /* RealmListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E64E20EB7AFD000B3E9F /* RealmListVC.swift */; };
 		A3D4A7AA82742723888B3D7E /* Pods_firebase_realtime_database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0080A4C4A4BEB35A5D0A8DC8 /* Pods_firebase_realtime_database.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +35,13 @@
 		533238A020E9D1850090E2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		533238A620E9E1A20090E2AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		533238A820E9FD610090E2AE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		533238AD20EA1B350090E2AE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		5333E61A20EB2275000B3E9F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5333E62120EB2B5C000B3E9F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		5333E64420EB2E11000B3E9F /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		5333E64620EB513E000B3E9F /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		5333E64820EB5DEC000B3E9F /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		5333E64C20EB625A000B3E9F /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		5333E64E20EB7AFD000B3E9F /* RealmListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmListVC.swift; sourceTree = "<group>"; };
 		808238305F7F2C8D7E3B3CF7 /* Pods-firebase realtime database.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase realtime database.release.xcconfig"; path = "Pods/Target Support Files/Pods-firebase realtime database/Pods-firebase realtime database.release.xcconfig"; sourceTree = "<group>"; };
 		BEF9CD8052FFB91B17F3B1DA /* Pods-firebase realtime database.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase realtime database.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firebase realtime database/Pods-firebase realtime database.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +61,7 @@
 		5332388820E9D1830090E2AE = {
 			isa = PBXGroup;
 			children = (
+				5333E61A20EB2275000B3E9F /* Default-568h@2x.png */,
 				5332389320E9D1830090E2AE /* firebase realtime database */,
 				5332389220E9D1830090E2AE /* Products */,
 				815398F8982E956D882E56D5 /* Pods */,
@@ -67,14 +80,13 @@
 		5332389320E9D1830090E2AE /* firebase realtime database */ = {
 			isa = PBXGroup;
 			children = (
+				5333E62020EB2B5C000B3E9F /* Model.xcdatamodeld */,
 				5332389420E9D1830090E2AE /* AppDelegate.swift */,
-				5332389620E9D1830090E2AE /* ListVC.swift */,
 				533238AA20EA12430090E2AE /* Model */,
-				5332389820E9D1830090E2AE /* Main.storyboard */,
-				5332389B20E9D1850090E2AE /* Assets.xcassets */,
-				5332389D20E9D1850090E2AE /* LaunchScreen.storyboard */,
-				533238A620E9E1A20090E2AE /* GoogleService-Info.plist */,
-				533238A020E9D1850090E2AE /* Info.plist */,
+				5333E61820EB1EAB000B3E9F /* View */,
+				5333E61920EB1EBE000B3E9F /* Controller */,
+				5333E61720EB1E9B000B3E9F /* SupportingFile */,
+				5333E64820EB5DEC000B3E9F /* Helper.swift */,
 			);
 			path = "firebase realtime database";
 			sourceTree = "<group>";
@@ -83,9 +95,39 @@
 			isa = PBXGroup;
 			children = (
 				533238A820E9FD610090E2AE /* Item.swift */,
-				533238AD20EA1B350090E2AE /* Data.swift */,
+				5333E64420EB2E11000B3E9F /* CoreDataService.swift */,
+				5333E64620EB513E000B3E9F /* FirebaseService.swift */,
+				5333E64C20EB625A000B3E9F /* RealmService.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5333E61720EB1E9B000B3E9F /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				5332389B20E9D1850090E2AE /* Assets.xcassets */,
+				5332389D20E9D1850090E2AE /* LaunchScreen.storyboard */,
+				533238A620E9E1A20090E2AE /* GoogleService-Info.plist */,
+				533238A020E9D1850090E2AE /* Info.plist */,
+			);
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		5333E61820EB1EAB000B3E9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5332389820E9D1830090E2AE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5333E61920EB1EBE000B3E9F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5332389620E9D1830090E2AE /* ListVC.swift */,
+				5333E64E20EB7AFD000B3E9F /* RealmListVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		815398F8982E956D882E56D5 /* Pods */ = {
@@ -168,6 +210,7 @@
 				5332389F20E9D1850090E2AE /* LaunchScreen.storyboard in Resources */,
 				533238A720E9E1A80090E2AE /* GoogleService-Info.plist in Resources */,
 				5332389C20E9D1850090E2AE /* Assets.xcassets in Resources */,
+				5333E61B20EB2275000B3E9F /* Default-568h@2x.png in Resources */,
 				5332389A20E9D1830090E2AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,12 +244,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-firebase realtime database/Pods-firebase realtime database-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -223,9 +270,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5332389720E9D1830090E2AE /* ListVC.swift in Sources */,
+				5333E64720EB513E000B3E9F /* FirebaseService.swift in Sources */,
+				5333E62220EB2B5C000B3E9F /* Model.xcdatamodeld in Sources */,
+				5333E64520EB2E11000B3E9F /* CoreDataService.swift in Sources */,
+				5333E64D20EB625A000B3E9F /* RealmService.swift in Sources */,
+				5333E64920EB5DEC000B3E9F /* Helper.swift in Sources */,
 				533238A920E9FD610090E2AE /* Item.swift in Sources */,
+				5333E64F20EB7AFD000B3E9F /* RealmListVC.swift in Sources */,
 				5332389520E9D1830090E2AE /* AppDelegate.swift in Sources */,
-				533238AE20EA1B350090E2AE /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCN239U73A;
-				INFOPLIST_FILE = "firebase realtime database/Info.plist";
+				INFOPLIST_FILE = "firebase realtime database/supportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,7 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCN239U73A;
-				INFOPLIST_FILE = "firebase realtime database/Info.plist";
+				INFOPLIST_FILE = "firebase realtime database/supportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,6 +477,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5333E62020EB2B5C000B3E9F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5333E62120EB2B5C000B3E9F /* Model.xcdatamodel */,
+			);
+			currentVersion = 5333E62120EB2B5C000B3E9F /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5332388920E9D1830090E2AE /* Project object */;
 }
