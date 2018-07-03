@@ -1,0 +1,6 @@
+framework module Pods_firebase_realtime_database {
+  umbrella header "Pods-firebase realtime database-umbrella.h"
+
+  export *
+  module * { export * }
+}

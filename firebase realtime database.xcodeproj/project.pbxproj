@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5332389520E9D1830090E2AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332389420E9D1830090E2AE /* AppDelegate.swift */; };
+		5332389720E9D1830090E2AE /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332389620E9D1830090E2AE /* ListVC.swift */; };
+		5332389A20E9D1830090E2AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5332389820E9D1830090E2AE /* Main.storyboard */; };
+		5332389C20E9D1850090E2AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5332389B20E9D1850090E2AE /* Assets.xcassets */; };
+		5332389F20E9D1850090E2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5332389D20E9D1850090E2AE /* LaunchScreen.storyboard */; };
+		533238A720E9E1A80090E2AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 533238A620E9E1A20090E2AE /* GoogleService-Info.plist */; };
+		533238A920E9FD610090E2AE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533238A820E9FD610090E2AE /* Item.swift */; };
+		533238AE20EA1B350090E2AE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533238AD20EA1B350090E2AE /* Data.swift */; };
+		A3D4A7AA82742723888B3D7E /* Pods_firebase_realtime_database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0080A4C4A4BEB35A5D0A8DC8 /* Pods_firebase_realtime_database.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0080A4C4A4BEB35A5D0A8DC8 /* Pods_firebase_realtime_database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firebase_realtime_database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5332389120E9D1830090E2AE /* firebase realtime database.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "firebase realtime database.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5332389420E9D1830090E2AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5332389620E9D1830090E2AE /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		5332389920E9D1830090E2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5332389B20E9D1850090E2AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5332389E20E9D1850090E2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		533238A020E9D1850090E2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		533238A620E9E1A20090E2AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		533238A820E9FD610090E2AE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		533238AD20EA1B350090E2AE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		808238305F7F2C8D7E3B3CF7 /* Pods-firebase realtime database.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase realtime database.release.xcconfig"; path = "Pods/Target Support Files/Pods-firebase realtime database/Pods-firebase realtime database.release.xcconfig"; sourceTree = "<group>"; };
+		BEF9CD8052FFB91B17F3B1DA /* Pods-firebase realtime database.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase realtime database.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firebase realtime database/Pods-firebase realtime database.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5332388E20E9D1830090E2AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3D4A7AA82742723888B3D7E /* Pods_firebase_realtime_database.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5332388820E9D1830090E2AE = {
+			isa = PBXGroup;
+			children = (
+				5332389320E9D1830090E2AE /* firebase realtime database */,
+				5332389220E9D1830090E2AE /* Products */,
+				815398F8982E956D882E56D5 /* Pods */,
+				8FF8EE1BF1EDEF277C897811 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5332389220E9D1830090E2AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5332389120E9D1830090E2AE /* firebase realtime database.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5332389320E9D1830090E2AE /* firebase realtime database */ = {
+			isa = PBXGroup;
+			children = (
+				5332389420E9D1830090E2AE /* AppDelegate.swift */,
+				5332389620E9D1830090E2AE /* ListVC.swift */,
+				533238AA20EA12430090E2AE /* Model */,
+				5332389820E9D1830090E2AE /* Main.storyboard */,
+				5332389B20E9D1850090E2AE /* Assets.xcassets */,
+				5332389D20E9D1850090E2AE /* LaunchScreen.storyboard */,
+				533238A620E9E1A20090E2AE /* GoogleService-Info.plist */,
+				533238A020E9D1850090E2AE /* Info.plist */,
+			);
+			path = "firebase realtime database";
+			sourceTree = "<group>";
+		};
+		533238AA20EA12430090E2AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				533238A820E9FD610090E2AE /* Item.swift */,
+				533238AD20EA1B350090E2AE /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		815398F8982E956D882E56D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9CD8052FFB91B17F3B1DA /* Pods-firebase realtime database.debug.xcconfig */,
+				808238305F7F2C8D7E3B3CF7 /* Pods-firebase realtime database.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8FF8EE1BF1EDEF277C897811 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0080A4C4A4BEB35A5D0A8DC8 /* Pods_firebase_realtime_database.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5332389020E9D1830090E2AE /* firebase realtime database */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 533238A320E9D1850090E2AE /* Build configuration list for PBXNativeTarget "firebase realtime database" */;
+			buildPhases = (
+				508E51F44BEF0035C4799F6D /* [CP] Check Pods Manifest.lock */,
+				5332388D20E9D1830090E2AE /* Sources */,
+				5332388E20E9D1830090E2AE /* Frameworks */,
+				5332388F20E9D1830090E2AE /* Resources */,
+				6F548F5F1541259B6573CAF0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "firebase realtime database";
+			productName = "firebase realtime database";
+			productReference = 5332389120E9D1830090E2AE /* firebase realtime database.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5332388920E9D1830090E2AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "PM Academy 3";
+				TargetAttributes = {
+					5332389020E9D1830090E2AE = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 5332388C20E9D1830090E2AE /* Build configuration list for PBXProject "firebase realtime database" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5332388820E9D1830090E2AE;
+			productRefGroup = 5332389220E9D1830090E2AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5332389020E9D1830090E2AE /* firebase realtime database */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5332388F20E9D1830090E2AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5332389F20E9D1850090E2AE /* LaunchScreen.storyboard in Resources */,
+				533238A720E9E1A80090E2AE /* GoogleService-Info.plist in Resources */,
+				5332389C20E9D1850090E2AE /* Assets.xcassets in Resources */,
+				5332389A20E9D1830090E2AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		508E51F44BEF0035C4799F6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-firebase realtime database-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F548F5F1541259B6573CAF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-firebase realtime database/Pods-firebase realtime database-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firebase realtime database/Pods-firebase realtime database-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5332388D20E9D1830090E2AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5332389720E9D1830090E2AE /* ListVC.swift in Sources */,
+				533238A920E9FD610090E2AE /* Item.swift in Sources */,
+				5332389520E9D1830090E2AE /* AppDelegate.swift in Sources */,
+				533238AE20EA1B350090E2AE /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5332389820E9D1830090E2AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5332389920E9D1830090E2AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5332389D20E9D1850090E2AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5332389E20E9D1850090E2AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		533238A120E9D1850090E2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		533238A220E9D1850090E2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		533238A420E9D1850090E2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEF9CD8052FFB91B17F3B1DA /* Pods-firebase realtime database.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LCN239U73A;
+				INFOPLIST_FILE = "firebase realtime database/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sam.firebase-realtime-database";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		533238A520E9D1850090E2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 808238305F7F2C8D7E3B3CF7 /* Pods-firebase realtime database.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LCN239U73A;
+				INFOPLIST_FILE = "firebase realtime database/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sam.firebase-realtime-database";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5332388C20E9D1830090E2AE /* Build configuration list for PBXProject "firebase realtime database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533238A120E9D1850090E2AE /* Debug */,
+				533238A220E9D1850090E2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		533238A320E9D1850090E2AE /* Build configuration list for PBXNativeTarget "firebase realtime database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533238A420E9D1850090E2AE /* Debug */,
+				533238A520E9D1850090E2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5332388920E9D1830090E2AE /* Project object */;
+}
