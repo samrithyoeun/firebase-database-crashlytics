@@ -18,14 +18,21 @@ class ListVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        FirebaseService.getAllData(completion: ({ (list) in
-            self.listItem = list
-            self.tableView.reloadData()
-            CoreDataService.deleteAll()
-            for item in self.listItem {
-                CoreDataService.insert(item)
-            }
-        }))
+        switch isConnectedToNetwork() {
+        case true:
+            FirebaseService.getAllData(completion: { list in
+                self.listItem = list
+                self.tableView.reloadData()
+                CoreDataService.deleteAll()
+                for item in self.listItem {
+                    CoreDataService.insert(item)
+                }
+            })
+        case false:
+            listItem = CoreDataService.retreiveData()
+            tableView.reloadData()
+        }
+       
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -58,21 +65,28 @@ class ListVC: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = listItem[indexPath.row]
         setUpUpdateAlert(of: item, completion:{ item in
+            self.listItem[indexPath.row] = item
             FirebaseService.update(item)
             CoreDataService.update(item, by: item.key)
+            self.tableView.reloadData()
         })
     }
     
     @IBAction func addButtonTouched(_ sender: Any) {
         setUpAddItemAlert(completion:{ item in
+        self.listItem.append(item)
         FirebaseService.add(item)
         CoreDataService.insert(item)
+        self.tableView.reloadData()
         })
     }
+    
+    
     
     @IBAction func crashButtonTouched(_ sender: Any) {
          Crashlytics.sharedInstance().crash()
     }
+    
     
    
 }

@@ -42,7 +42,7 @@ DEPENDENCIES:
   - Fabric (= 1.7.7)
   - Firebase/Core
   - Firebase/Database
-  - RealmSwift
+  - RealmSwift (= 3.7.4)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -73,6 +73,6 @@ SPEC CHECKSUMS:
   Realm: a469bb59e33f9926102ccaea4349822c53b9117e
   RealmSwift: a45861b21c180f5cf0f122144b9759fa8dde3e9e
 
-PODFILE CHECKSUM: c5d3605042d7d23b2f6670edf0879e373b0ae13c
+PODFILE CHECKSUM: ceaa8127291fd0917c4e1f16912ba9c5ae598d71
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3

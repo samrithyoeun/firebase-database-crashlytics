@@ -67,15 +67,7 @@ func isConnectedToNetwork() -> Bool {
         if SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags) == false {
             return false
         }
-        
-        /* Only Working for WIFI
-         let isReachable = flags == .reachable
-         let needsConnection = flags == .connectionRequired
-         
-         return isReachable && !needsConnection
-         */
-        
-        // Working for Cellular and WIFI
+    
         let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
         let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
         let ret = (isReachable && !needsConnection)
@@ -84,25 +76,5 @@ func isConnectedToNetwork() -> Bool {
         
     }
 
-extension UIApplication {
-    
-    class func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
-        
-        if let navigationController = controller as? UINavigationController {
-            return topViewController(controller: navigationController.visibleViewController)
-        }
-        
-        if let tabController = controller as? UITabBarController {
-            if let selected = tabController.selectedViewController {
-                return topViewController(controller: selected)
-            }
-        }
-        
-        if let presented = controller?.presentedViewController {
-            return topViewController(controller: presented)
-        }
-        return controller
-    }
-}
 
 

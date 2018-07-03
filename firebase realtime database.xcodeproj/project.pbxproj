@@ -22,6 +22,7 @@
 		5333E64D20EB625A000B3E9F /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E64C20EB625A000B3E9F /* RealmService.swift */; };
 		5333E64F20EB7AFD000B3E9F /* RealmListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E64E20EB7AFD000B3E9F /* RealmListVC.swift */; };
 		A3D4A7AA82742723888B3D7E /* Pods_firebase_realtime_database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0080A4C4A4BEB35A5D0A8DC8 /* Pods_firebase_realtime_database.framework */; };
+		CD6C62F420EBC02400C13201 /* UIApplicationEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C62F320EBC02400C13201 /* UIApplicationEx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		5333E64E20EB7AFD000B3E9F /* RealmListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmListVC.swift; sourceTree = "<group>"; };
 		808238305F7F2C8D7E3B3CF7 /* Pods-firebase realtime database.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase realtime database.release.xcconfig"; path = "Pods/Target Support Files/Pods-firebase realtime database/Pods-firebase realtime database.release.xcconfig"; sourceTree = "<group>"; };
 		BEF9CD8052FFB91B17F3B1DA /* Pods-firebase realtime database.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase realtime database.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firebase realtime database/Pods-firebase realtime database.debug.xcconfig"; sourceTree = "<group>"; };
+		CD6C62F320EBC02400C13201 /* UIApplicationEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationEx.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,13 +82,12 @@
 		5332389320E9D1830090E2AE /* firebase realtime database */ = {
 			isa = PBXGroup;
 			children = (
-				5333E62020EB2B5C000B3E9F /* Model.xcdatamodeld */,
 				5332389420E9D1830090E2AE /* AppDelegate.swift */,
 				533238AA20EA12430090E2AE /* Model */,
 				5333E61820EB1EAB000B3E9F /* View */,
 				5333E61920EB1EBE000B3E9F /* Controller */,
+				CD245FBF20EB837600F92F52 /* Common */,
 				5333E61720EB1E9B000B3E9F /* SupportingFile */,
-				5333E64820EB5DEC000B3E9F /* Helper.swift */,
 			);
 			path = "firebase realtime database";
 			sourceTree = "<group>";
@@ -94,10 +95,9 @@
 		533238AA20EA12430090E2AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5333E62020EB2B5C000B3E9F /* Model.xcdatamodeld */,
 				533238A820E9FD610090E2AE /* Item.swift */,
-				5333E64420EB2E11000B3E9F /* CoreDataService.swift */,
-				5333E64620EB513E000B3E9F /* FirebaseService.swift */,
-				5333E64C20EB625A000B3E9F /* RealmService.swift */,
+				CDBAF39420EBC12D004AA018 /* Service */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +145,25 @@
 				0080A4C4A4BEB35A5D0A8DC8 /* Pods_firebase_realtime_database.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD245FBF20EB837600F92F52 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5333E64820EB5DEC000B3E9F /* Helper.swift */,
+				CD6C62F320EBC02400C13201 /* UIApplicationEx.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CDBAF39420EBC12D004AA018 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5333E64420EB2E11000B3E9F /* CoreDataService.swift */,
+				5333E64620EB513E000B3E9F /* FirebaseService.swift */,
+				5333E64C20EB625A000B3E9F /* RealmService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +293,7 @@
 				5333E62220EB2B5C000B3E9F /* Model.xcdatamodeld in Sources */,
 				5333E64520EB2E11000B3E9F /* CoreDataService.swift in Sources */,
 				5333E64D20EB625A000B3E9F /* RealmService.swift in Sources */,
+				CD6C62F420EBC02400C13201 /* UIApplicationEx.swift in Sources */,
 				5333E64920EB5DEC000B3E9F /* Helper.swift in Sources */,
 				533238A920E9FD610090E2AE /* Item.swift in Sources */,
 				5333E64F20EB7AFD000B3E9F /* RealmListVC.swift in Sources */,

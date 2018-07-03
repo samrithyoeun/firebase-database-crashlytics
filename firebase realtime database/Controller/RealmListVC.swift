@@ -16,11 +16,19 @@ class RealmListVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        FirebaseService.getAllData(completion: ({ (list) in
-            self.listItem = list
-            self.tableView.reloadData()
-            RealmService.save(self.listItem)
-        }))
+        self.navigationController?.navigationBar.barTintColor = UIColor.purple
+        switch isConnectedToNetwork() {
+        case true:
+            FirebaseService.getAllData(completion: ({ (list) in
+                self.listItem = list
+                self.tableView.reloadData()
+                RealmService.save(self.listItem)
+            }))
+        case false:
+            listItem = RealmService.getAll()
+            tableView.reloadData()
+        }
+       
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -54,8 +62,9 @@ class RealmListVC: UITableViewController {
         let item = listItem[indexPath.row]
         setUpUpdateAlert(of: item, completion:{ item in
             FirebaseService.update(item)
+            self.listItem[indexPath.row] = item
             RealmService.update(item)
-            
+            self.tableView.reloadData()
         })
     }
     
@@ -63,6 +72,8 @@ class RealmListVC: UITableViewController {
         setUpAddItemAlert(completion:{ item in
             FirebaseService.add(item)
             RealmService.insert(item)
+            self.listItem.append(item)
+            self.tableView.reloadData()
         })
     }
     

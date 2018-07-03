@@ -48,17 +48,23 @@ class RealmService: Object {
     }
     
     static func delete(_ item: Item){
-        let object = RealmService()
-        object.setValue(item: item)
         let realm = try! Realm()
-        try! realm.write {
-            realm.delete(object)
+        let objects = realm.objects(RealmService.self).filter("key = %@", item.key)
+        print(objects)
+        if let object = objects.first {
+            try! realm.write {
+                realm.delete(object)
+            }
         }
     }
     
     static func deleteAll(){
+        
         let realm  = try! Realm()
-        realm.deleteAll()
+        try! realm.write {
+            realm.deleteAll()
+            
+        }
     }
     
     static func save(_ list: [Item]){
@@ -70,8 +76,13 @@ class RealmService: Object {
     
     static func update(_ item: Item){
         let realm = try! Realm()
-        try! realm.write {
-            realm.create(RealmService.self, value: ["key": item.key, "name": item.name, "descriptions": item.description], update: false)
+        let objects = realm.objects(RealmService.self).filter("key = %@", item.key)
+        print(objects)
+        if let object = objects.first {
+            try! realm.write {
+                object.name = item.name
+                object.descriptions = item.description
+            }
         }
     }
 }
